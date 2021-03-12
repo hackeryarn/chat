@@ -5,7 +5,8 @@
   :depends-on ("clog")
   :components ((:module "src"
                 :components
-                ((:file "main"))))
+                ((:file "main")))
+               (:file "application" :depends-on "src/main"))
   :description ""
   :in-order-to ((test-op (test-op "chat/tests"))))
 
