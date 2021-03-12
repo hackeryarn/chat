@@ -66,5 +66,4 @@
 
 (defun start-app (port)
   "Start demo."
-  (initialize #'on-new-window :port port)
-  (open-browser))
+  (initialize #'on-new-window :port port))

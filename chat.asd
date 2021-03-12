@@ -6,7 +6,7 @@
   :components ((:module "src"
                 :components
                 ((:file "main")))
-               (:file "application" :depends-on "src/main"))
+               (:file "application" :depends-on ("src")))
   :description ""
   :in-order-to ((test-op (test-op "chat/tests"))))
 
