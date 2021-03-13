@@ -2,9 +2,7 @@
 
 (print ">>> Building system....")
 
-(load (merge-pathnames *build-dir* #p"chat.asd"))
-
-(make-pathname)
+(push *build-dir* asdf:*central-registry*)
 
 (ql:quickload :chat)
 
