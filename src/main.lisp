@@ -66,4 +66,4 @@
 
 (defun start-app (port)
   "Start demo."
-  (initialize #'on-new-window :port port :static-root #P"www/"))
+  (initialize #'on-new-window :port port))
