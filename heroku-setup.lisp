@@ -2,6 +2,8 @@
 
 (print ">>> Building system....")
 
+(load (make-pathname :directory *build-dir* :defaults "chat.asd"))
+
 (ql:quickload :chat)
 
 (defun heroku-toplevel ()
