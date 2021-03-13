@@ -2,7 +2,8 @@
   :version "0.1.0"
   :author "hackeryarn"
   :license "MIT"
-  :depends-on ("clog")
+  :depends-on ("clog"
+               "hunchentoot")
   :components ((:module "src"
                 :components
                 ((:file "main")))
