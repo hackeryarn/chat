@@ -3,6 +3,7 @@
   :author "hackeryarn"
   :license "MIT"
   :depends-on ("clog"
+               "clack-handler-hunchentoot"
                "hunchentoot")
   :components ((:module "src"
                 :components
