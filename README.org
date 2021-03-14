@@ -18,6 +18,7 @@ A sample [[https://github.com/rabbibotton/clog][CLOG]] application setup to run 
 - ~heroku-compile.lisp~ ensure our application loads during build.
 - ~application.lisp~ acts as the server's entry point to the application
 - You must bundle static assets with the project and supply them as ~:static-root~ to ~initialize~. See ~src/main.lisp~ for a example.
+- You must include ~clack-handler-hunchentoot~ and ~hunchentoot~ as explicit dependencies. The app will not start without these.
 
 ** Heroku setup
 
