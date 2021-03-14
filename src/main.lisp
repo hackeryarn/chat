@@ -68,6 +68,4 @@
   "Start demo."
   (initialize #'on-new-window
               :port port
-              :static-root (merge-pathnames
-                            "src/www/"
-                            (asdf:system-source-directory :chat))))
+              :static-root "src/www/"))
