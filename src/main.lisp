@@ -66,4 +66,8 @@
 
 (defun start-app (port)
   "Start demo."
-  (initialize #'on-new-window :port port))
+  (initialize #'on-new-window
+              :port port
+              :static-root (merge-pathnames
+                            "src/www/"
+                            (asdf:system-source-directory :chat))))
