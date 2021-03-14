@@ -1,5 +1,0 @@
-# Chat
-
-## Usage
-
-## Installation

@@ -1,5 +1,25 @@
-* Chat 
+* Chat
 
-** Usage
+A sample [[https://github.com/rabbibotton/clog][CLOG]] application setup to run on Heroku.
 
-** Installation
+** This is
+
+- A copy of a CLOG tutorial.
+- A simple demonstration of deploying a CLOG app.
+- Should support other lisps but only test with SBCL.
+
+** This is not
+
+- A universal template.
+- Set of best practices.
+
+** Heroku specific notes
+
+- ~heroku-compile.lisp~ ensure our application loads during build.
+- ~application.lisp~ acts as the server's entry point to the application
+- You must bundle static assets with the project and supply them as ~:static-root~ to ~initialize~. See ~src/main.lisp~ for a example.
+
+** Heroku setup
+
+- Use [[https://gitlab.com/bendersteed/heroku-buildpack-common-lisp][heroku-buildpack-common-lisp]] as your buildpack. This one has support for multiple lisps (including SBCL).
+- Set Heroku environment variable ~CL_IMPL: sbcl-bin~.
